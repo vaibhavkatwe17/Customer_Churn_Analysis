@@ -43,7 +43,7 @@ This project:
 
 ## 📊 Dashboard Visuals
 
-![Dashboard Screenshot](./Dashboard_Screenshot.jpg)
+![Dashboard Screenshot](https://github.com/vaibhavkatwe17/Customer_Churn_Data_Analytics/blob/main/Chusomer%20churn%20Dashbord%20ss.jpg?raw=true)
 
 ### Key Visuals:
 - Bar chart: Count of churned vs non-churned customers
