@@ -1,4 +1,5 @@
-# 📊 Customer Churn Analysis Dashboard – Power BI Project
+
+# 📊 Customer Churn Analysis
 
 This project analyzes customer churn behavior using a telecom dataset. It investigates key factors such as payment methods, streaming services, contract types, and demographics that influence whether a customer stays or leaves.
 
@@ -17,27 +18,44 @@ This project:
 
 ## 📁 Dataset Information
 
-- **Rows**: 7043
-- **Columns**: 21
-- **Source**: Simulated telecom data
-- **Target Variable**: `Churn` (Yes/No)
+- Rows: 7043  
+- Columns: 21  
+- Source: Simulated telecom data  
+- Target Variable: Churn (Yes/No)
 
 ---
 
 ## ⚙️ Key Fields Used
 
-- `Churn`, `gender`, `SeniorCitizen`, `Contract`, `PaymentMethod`
-- `MonthlyCharges`, `TotalCharges`, `tenure`, `StreamingTV`, `StreamingMovies`
-- `MultipleLines`, `InternetService`
+- Churn, gender, SeniorCitizen, Contract, PaymentMethod  
+- MonthlyCharges, TotalCharges, tenure, StreamingTV, StreamingMovies  
+- MultipleLines, InternetService
 
 ---
 
-## 🧹 Data Cleaning Steps
+## 🧹 Data Cleaning Summary (Python – Pandas + NumPy)
 
-- Removed duplicates and invalid `customerID`s
-- Converted data types (e.g. `TotalCharges` to float)
-- Standardized categorical values (e.g. "No internet service" treated separately)
-- Filtered and grouped fields for analysis
+Before building the dashboard, the dataset was cleaned using Python. Here's how the data was prepared for analysis:
+
+1. Library Import  
+   - Used pandas for data manipulation  
+   - Used numpy for numerical operations
+
+2. Data Loading  
+   - Loaded the dataset using pd.read_csv() from a local directory
+
+3. Initial Inspection  
+   - Used .info() to check data types and null values  
+   - Identified that TotalCharges had incorrect data types and blank spaces
+
+4. Fixing Data Issues  
+   - Replaced blank strings in TotalCharges with 0  
+   - Converted TotalCharges to float for accurate numeric analysis
+
+5. Verified Changes  
+   - Rechecked the data types using .info() to confirm successful cleaning
+
+📌 These preprocessing steps helped ensure smooth dashboard integration in Power BI and accurate insights.
 
 ---
 
@@ -46,27 +64,27 @@ This project:
 ![Dashboard Screenshot](https://github.com/vaibhavkatwe17/Customer_Churn_Data_Analytics/blob/main/Chusomer%20churn%20Dashbord%20ss.jpg?raw=true)
 
 ### Key Visuals:
-- Bar chart: Count of churned vs non-churned customers
-- Gender-wise and senior citizen-wise churn
-- StreamingTV & StreamingMovies impact
-- Payment method analysis
-- MultipleLines vs churn
-- Pie chart showing overall churn rate
+- Bar chart: Count of churned vs non-churned customers  
+- Gender-wise and senior citizen-wise churn  
+- StreamingTV & StreamingMovies impact  
+- Payment method analysis  
+- MultipleLines vs churn  
+- Pie chart showing overall churn rate  
 - KPI Cards (total revenue, tenure, customer count)
 
 ---
 
 ## 📈 Insights from Dashboard
 
-- **Churn Rate**: ~27% of customers have churned
-- **High churn among**: 
-  - Senior citizens
-  - Month-to-month contract holders
+- Churn Rate: ~27% of customers have churned
+- High churn among:  
+  - Senior citizens  
+  - Month-to-month contract holders  
   - Customers using electronic check
-- **Lower churn**:
-  - Annual or 2-year contracts
+- Lower churn:  
+  - Annual or 2-year contracts  
   - Auto-payment methods like bank transfers or credit cards
-- **Streaming services** have a mild correlation with churn
+- Streaming services have a mild correlation with churn  
 - Customers without phone/internet service churn less
 
 ---
@@ -75,13 +93,17 @@ This project:
 
 | Tool | Purpose |
 |------|---------|
-| **Power BI** | Dashboard building & visualization |
-| **Python (Pandas)** | Data cleaning & initial analysis |
-| **GitHub** | Portfolio project hosting |
-| **Excel** | Quick previews |
+| Power BI | Dashboard building & visualization |
+| Python (Pandas) | Data cleaning & initial analysis |
+| GitHub | Portfolio project hosting |
+| Excel | Quick previews |
 
 ---
 
 ## 📌 Conclusion
 
 This project demonstrates how business intelligence tools like Power BI can uncover actionable insights from telecom churn data. It emphasizes the importance of customer demographics, payment methods, and service types in predicting churn.
+
+---
+
+✅ Project by [Vaibhav Katwe](https://github.com/vaibhavkatwe17)
