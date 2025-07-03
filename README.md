@@ -5,6 +5,10 @@ This project analyzes customer churn behavior using a telecom dataset. It invest
 
 ---
 
+## Problem Statement ##
+Telecom companies face significant revenue loss due to customer churn, especially in competitive markets. However, without a deep understanding of the factors contributing to churn—such as payment methods, contract types, service usage, and customer demographics—it becomes difficult to implement effective retention strategies.
+
+This project aims to analyze a telecom dataset to identify the key drivers of customer churn. By using data cleaning in Python and visualization in Power BI, the goal is to uncover patterns and correlations that can help reduce churn and improve customer satisfaction.
 ## 🔍 Project Overview
 
 Customer churn is a key metric in subscription-based businesses. Understanding what influences churn helps improve retention strategies.
